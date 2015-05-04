@@ -1,15 +1,3 @@
 $( document ).ready(function() {
-    $(".incorrect").on("click", function(){
-    	swal("Shhhhhh....", "Are you serious? Try again hurry up, this doesnt count..", "error");
-    });
-    $(".correct").on("click", function(){
-    	swal({
-    		title: "Good job!",
-    		text: "You are correct!",
-    		type: "success"
-    	},
-    	function(isConfirm){
-    		$("#next").get(0).click();
-    	});
-    });
+
 });
