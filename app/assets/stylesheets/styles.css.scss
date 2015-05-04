@@ -2,12 +2,12 @@ $orange: #f58a22;
 
 
 body{
-	background:url("/assets/bkgnd-gray.jpg");		
+	background:asset-url("bkgnd-gray.jpg");		
 }
 
 /////////////// NAVIGATION ///////////////
 .nav{
-	background:url("/assets/bkgnd-blue.jpg");
+	background:asset-url("bkgnd-blue.jpg");
 	border-bottom: 3px solid #8eceff;
 	a{
 		color:#fff;
@@ -24,7 +24,7 @@ body{
 
 /////////////// FOOTER ///////////////
 footer{
-	background:url("/assets/bkgnd-blue.jpg");
+	background:url("bkgnd-blue.jpg");
 	bottom:0;
 	h5{
 		width:100%;
@@ -78,7 +78,7 @@ footer{
 			height: 245px;
 		}
 		#general{
-			background: url("category-general.jpg");
+			background:asset-url("category-general.jpg");
 			-webkit-transition: .5s;
 			transition: .5s;
 			&:hover{
@@ -86,7 +86,7 @@ footer{
 			}
 		}
 		#electric{
-			background: url("category-electric.jpg");
+			background:asset-url("category-electric.jpg");
 			-webkit-transition: .5s;
 			transition: .5s;
 			&:hover{
@@ -94,7 +94,7 @@ footer{
 			}
 		}
 		#print{
-			background: url("category-print.jpg");
+			background:asset-url("category-print.jpg");
 			-webkit-transition: .5s;
 			transition: .5s;
 			&:hover{
@@ -102,7 +102,7 @@ footer{
 			}
 		}
 		#other{
-			background: url("category-other.jpg");
+			background:asset-url("category-other.jpg");
 			-webkit-transition: .5s;
 			transition: .5s;
 			&:hover{
