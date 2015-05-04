@@ -1,2 +1,16 @@
 .container
 	%h1 Contact Page
+	= form_tag url_for(:action => 'send_email'), :remote => true, :id => 'contact_form' do
+		#tag1 First Name:
+		= text_field_tag :first_name, '', :name => "user[first_name]", :size => "33"
+		%br
+		#tag1 Last Name:
+		= text_field_tag :last_name, '', :name => "user[last_name]", :size => "33"
+		%br
+		#tag1 Email Address:
+		= email_field_tag :email_address, '', :name => "user[email_address]", :size => "33"
+		%br
+		#tag1 How can I help you?
+		= text_area_tag :notes, '', :name => "user[notes]", :size => "29x8"
+		%br
+		= submit_tag "Submit", :id => "submit_form_button"
