@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   get 'pages/index'
   get 'pages/gallary'
   get 'pages/contact'
-  post "/send_email" => "pages#send_email"
+	post "/send_email" => "pages#send_email" 
 end
