@@ -1,16 +1,38 @@
-.container
+.contact.container
 	%h1 Contact Page
-	= form_tag url_for(:action => 'send_email'), :remote => true, :id => 'contact_form' do
-		#tag1 First Name:
-		= text_field_tag :first_name, '', :name => "user[first_name]", :size => "33"
-		%br
-		#tag1 Last Name:
-		= text_field_tag :last_name, '', :name => "user[last_name]", :size => "33"
-		%br
-		#tag1 Email Address:
-		= email_field_tag :email_address, '', :name => "user[email_address]", :size => "33"
-		%br
-		#tag1 How can I help you?
-		= text_area_tag :notes, '', :name => "user[notes]", :size => "29x8"
-		%br
-		= submit_tag "Submit", :id => "submit_form_button"
+	%p Please feel free to reach out, we'd love to hear from you.
+	
+	#form.row
+		.col-md-6
+			%h3 Location
+			%p 4073 N. Elston Ave.
+			%p Chicago, IL 60618
+
+			%h3 Phone
+			%p Phone1: 773-463-7831
+			%p Phone2: 773-463-7841
+			%p Fax: 773-463-7838
+
+			%h3 Business Hours
+			%p Mon-Fri: 8:30am-5:30pm
+
+		.col-md-5
+			= form_tag url_for(:action => 'send_email'), :remote => true, :id => 'contact_form' do
+				%h3 Request More Info
+				.tag1 Full Name:
+				= text_field_tag :first_name, '', :name => "user[first_name]", :size => "33"
+				%br
+				.tag1 Email Address:
+				= email_field_tag :email_address, '', :name => "user[email_address]", :size => "33"
+				%br
+				.tag1 Phone:
+				= text_field_tag :last_name, '', :name => "user[last_name]", :size => "33"
+
+				%br
+				.tag1 How can we help you?
+				= text_area_tag :notes, '', :name => "user[notes]", :size => "35x8"
+				%br
+				= submit_tag "Submit", :id => "submit_form_button"
+
+	
+	%iframe{:frameborder => "0", :height => "100", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2967.0976296250733!2d-87.72119399999997!3d41.95523799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcdbf3ed5497d%3A0x62d8adb1fe99ad16!2sLe's+Signs!5e0!3m2!1sen!2sus!4v1430858932600", :style => "border:0", :width => "500"}
