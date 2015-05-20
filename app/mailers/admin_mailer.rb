@@ -1,12 +1,12 @@
 class AdminMailer < ActionMailer::Base
-  default from: "cosepaol88@gmail.com"
+  default from: "lesignschicago@yahoo.com"
 
 
     def send_email(user_info)
     @name = user_info[:name]
     @email = user_info[:email]
     @description = user_info[:description]
-    mail(:to => "cosepaol88@gmail.com", :subject => "Portfolio Notification")
+    mail(:to => "lesignschicago@yahoo.com", :subject => "Work Order Notification")
   end
 
 end
