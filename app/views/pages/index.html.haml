@@ -4,8 +4,8 @@
 			/ Indicators
 			%ol.carousel-indicators
 				%li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
-				/ %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
-				/ %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+				%li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+				%li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
 				/ %li{"data-slide-to" => "3", "data-target" => "#myCarousel"}
 			/ Wrapper for slides
 			.carousel-inner{:role => "listbox"}
@@ -15,10 +15,10 @@
 						%h1 YOUR AD
 						%h3 ON THE ROAD!
 						%h5 ASK ABOUT CAR WRAPS!
-				/ .item
-				/ 	= image_tag("http://placehold.it/1200x431")
-				/ .item
-				/ 	= image_tag("http://placehold.it/1200x431")
+				.item
+					= image_tag("slide2.jpg")
+				.item
+					= image_tag("slide3.jpg")
 				/ .item
 				/ 	= image_tag("http://placehold.it/1200x431")
 			/ Left and right controls
